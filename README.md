@@ -1,7 +1,7 @@
 
 #  Github fireb App
 
-This project is a simple web application built using React, Firebase, and Github APIs.
+This project is a simple web application built using React with Firebase, and Github APIs.
 
 ## Features
 
