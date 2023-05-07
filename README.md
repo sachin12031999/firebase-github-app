@@ -26,7 +26,7 @@ This project is a simple web application built using React, Firebase, and Github
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/ten-firebase-github-app.git
+git clone https://github.com/your-username/firebase-github-app.git
 ```
 
 2. Navigate to the project directory:
@@ -63,6 +63,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## License
+## visit
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+[visit now](#)
+.
