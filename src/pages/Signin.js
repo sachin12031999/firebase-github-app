@@ -6,11 +6,12 @@ import { Container , Row , Col , Card , CardBody , Form, Button, FormGroup, Labe
  import 'firebase/compat/auth';
  import 'firebase/compat/firestore';
  import { UserContext } from '../context/UserContext'
- import { redirect } from 'react-router-dom'
+ import { Link, useNavigate} from 'react-router-dom'
  import { toast } from 'react-toastify'
 
 const Signin = () => {
   // const context =useContext(UseContextr
+  const navigate = useNavigate();
   const context = useContext(UserContext);
 
   const [email , setEmail] = useState('')
@@ -40,7 +41,7 @@ const Signin = () => {
   }
 
   if (context.user?.uid) {
-    return <redirect to="/" />
+    navigate("/")
   }
 
  return (
@@ -86,6 +87,7 @@ const Signin = () => {
                 <Button type="submit" block color="primary">
                   Sign In
                 </Button>
+                <p>New User ? <Link to="/signup">Register</Link></p>
               </CardFooter>
             </Form>
           </Card>

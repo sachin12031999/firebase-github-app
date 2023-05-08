@@ -18,7 +18,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import { UserContext } from "../context/UserContext";
-import { redirect } from "react-router-dom";
+import { redirect , Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Signup = () => {
@@ -95,6 +95,7 @@ const Signup = () => {
                 <Button type="submit" block color="primary">
                   Sign Up
                 </Button>
+                <p>Already User?  <Link to="/signin">Signin</Link></p>
               </CardFooter>
             </Form>
           </Card>

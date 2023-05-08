@@ -45,7 +45,6 @@ const App=()=> {
       <Header/>
       <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route exact path="/" element={() => <div>Welcome to the home page</div>} />
         <Route exact path="/signin" element={<Signin/>} />
         <Route exact path="/signup" element={<Signup/>} />
         <Route exact path="*" element={<PageNotFound/>} />

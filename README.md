@@ -1,7 +1,7 @@
 
 #  Github fireb App
 
-This project is a simple web application built using React with Firebase, and Github APIs.
+This project is a simple web application built using React with Firebase and Github APIs.
 
 ## Features
 
@@ -26,7 +26,7 @@ This project is a simple web application built using React with Firebase, and Gi
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/firebase-github-app.git
+git clone https://github.com/sachin12031999/firebase-github-app.git
 ```
 
 2. Navigate to the project directory:

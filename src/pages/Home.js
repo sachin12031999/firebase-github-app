@@ -2,14 +2,7 @@
 import React, { useState, useContext } from "react";
 import Axios from "axios";
 
-import {
-  Row,
-  Container,
-  Col,
-  Input,
-  Button,
-  InputGroup,
-  InputGroupAddon, InputGroupText
+import {  Row,  Container,  Col,  Input,  Button,  InputGroup,  InputGroupAddon, InputGroupText
 } from "reactstrap";
 
 import UserCard from "../Components/UserCard";
@@ -23,12 +16,12 @@ const Home = () => {
   const context = useContext(UserContext)
   const [query, setQuery] = useState('')
   const [user, setUser] = useState(null)
-
+  // console.log(user.repos_url);
   const fetchDetails = async () => {
     try {
       const { data } = await Axios.get(`https://api.github.com/users/${query}`)
       setUser(data)
-      console.log({ data })
+      // console.log(data)
     } catch (error) {
       toast("This username is not avilable in GitHub", { type: "alert" })
     }
