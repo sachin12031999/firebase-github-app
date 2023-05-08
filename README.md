@@ -66,5 +66,4 @@ Please make sure to update tests as appropriate.
 ## visit
 
 
-[visit now](#)
-.
+[visit now](https://6458d4f0024ebb23e71ded69--creative-monstera-9507a4.netlify.app/signup)
