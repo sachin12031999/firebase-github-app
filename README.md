@@ -66,4 +66,4 @@ Please make sure to update tests as appropriate.
 ## visit
 
 
-[visit now](https://6458d6828f69eb1c1f488445--jolly-puppy-c19f3a.netlify.app/signup)
+[visit now](https://6458d6828f69eb1c1f488445--jolly-puppy-c19f3a.netlify.app)
