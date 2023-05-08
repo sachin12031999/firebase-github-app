@@ -7,12 +7,14 @@ import {  Row,  Container,  Col,  Input,  Button,  InputGroup,  InputGroupAddon,
 
 import UserCard from "../Components/UserCard";
 import Repos from "../Components/Repos";
-import  {redirect}  from "react-router-dom";
+import  {redirect , useNavigate}  from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import { toast } from "react-toastify";
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const context = useContext(UserContext)
   const [query, setQuery] = useState('')
   const [user, setUser] = useState(null)
@@ -26,8 +28,11 @@ const Home = () => {
       toast("This username is not avilable in GitHub", { type: "alert" })
     }
   }
+
 if (!context.user?.email) {
-  return (<redirect to="/signin" />)
+  // return (<redirect to="/signin" />)
+  navigate("/signin")
+
   
 }
   return (
