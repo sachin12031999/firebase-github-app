@@ -18,11 +18,12 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import { UserContext } from "../context/UserContext";
-import { redirect , Link } from "react-router-dom";
+ import { useNavigate , redirect , Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Signup = () => {
   // const context =useContext(UseContextr
+  const navigate = useNavigate();
   const context = useContext(UserContext);
 
   const [email, setEmail] = useState("");
@@ -48,8 +49,12 @@ const Signup = () => {
     handleSignUp();
   };
 
+  // if (context.user?.uid) {
+  //   return <redirect to="/" />;
+  // }
+  
   if (context.user?.uid) {
-    return <redirect to="/" />;
+    navigate("/")
   }
 
   return (
